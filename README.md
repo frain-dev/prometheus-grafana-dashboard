@@ -7,9 +7,9 @@ Docker-compose file for deploying grafana and Prometheus along with Convoy. Also
 3. If you want, you can modify the compose file to use an already existing convoy image from [Github Container Registry](https://github.com/frain-dev/convoy/pkgs/container/convoy).  
 4. You'll need to also create your convoy.json config file but there is a sample config here that works [convoy.json](./convoy.json).  
 5. Note that the convoy.json config here is using Redis and Mongo, so the compose file deploys redis and mongo along with convoy.  
-6. Start the build and deployment.
+6. Build and run the containers.
 ```bash
 docker-compose up -d
 ```
-7. Once the deployment is complete go to localhost:3000 to view your grafana instance. 
+7. Once the build is complete, go to localhost:3000 to view your grafana instance. 
 8. You can import the sample [dashboards](./dashboards) into your grafana instance. 
